@@ -1,0 +1,7 @@
+#bash
+wget http://localhost:5555/tgis/layer/add?name=layerMilitaryUnit&lat=latitude&lon=longitude
+wget http://localhost:5555/tgis/militaryunit/add?name=USMC-MCTSSA&lat=60.1&lon=15.2
+
+#http://localhost:5555/tgis/layer/addnode?name=layerMilitaryUnit&node=12715
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"layer" : "layerGeometry"}' localhost:7474/db/data/ext/SpatialPlugin/graphdb/getLayer
